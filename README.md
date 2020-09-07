@@ -20,12 +20,12 @@ This research blueprint has the purpose of showing the most common and fresh glo
 
 ## Why do we need a global state management library?
 
-Most libraries like React, Angular, etc. are built with a way for components to internally manage their state without any need for an external library or tool. As the frontend application grows,  managing states shared across componentes becomes a nightmare. The data in a component should live in just one component, so sharing data among sibling components becomes difficult.
+Most libraries like React, Angular, etc. are built with a way for components to internally manage their state without any need for an external library or tool. As the frontend application grows, managing states shared across componentes becomes a nightmare. The data in a component should live in just one component, so sharing data among sibling components becomes difficult.
 
 ## Which is the most installed solutions for this matter?
 ![Redux Mobx NpmTrends](images/npmtrends-redux-mobx.png)
 *The most used library is redux* based on npmtrends. 
-*Redux is a predictable state container for JavaScript apps.* The state of our whole application is stored in an object tree within a single store, which your app components depend on.  
+**Redux is a predictable state container for JavaScript apps.** The state of our whole application is stored in an object tree within a single store, which your app components depend on.  
 Every component is connected directly to the global store, and the global store life cycle is independent of the components' life cycle.  
 Another solution is Mobx. Both seem to be complex enough to look for alternatives.
 
@@ -37,7 +37,7 @@ After some research, the best libraries for state management in 2020 are by orde
 ## Should we use Context API?
 
 The Context API is great. It’s super easy to use compared to Redux and requires a lot less code, so why wouldn’t we use it?  
-*The problem with context is simple: Everything that consumes a context re-renders everytime that context’s state changes.*  
+**The problem with context is simple: Everything that consumes a context re-renders everytime that context’s state changes.**  
 That means that if you’re consuming your context all over the place in your app, or worse, using one context for your entire app’s state, you’re causing a ton of re-renders all over the place!  
 Using useMemo doesn’t prevent rerenders on all components’ consumers.  
 It would be needed several context Api providers to avoid rerenders on data mutation across the same context.
