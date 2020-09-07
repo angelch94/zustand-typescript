@@ -2,12 +2,14 @@ import create from 'zustand'
 
 type State = {
     countries: string[]
+    languages: string[]
     getAllCountries: () => void
     setCountry: (country: string) => void
 }
   
 export const useStore = create<State>(set => ({
     countries: [],
+    languages: ["Spanish", "English"],
     getAllCountries: async () => {
         const countries = await getAllCountries()
         set( state => ({ countries }))
