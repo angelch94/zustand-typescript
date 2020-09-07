@@ -25,7 +25,8 @@ Most libraries like React, Angular, etc. are built with a way for components to 
 ## Which is the most installed solutions for this matter?
 ![Redux Mobx NpmTrends](images/npmtrends-redux-mobx.png)
 *The most used library is redux* based on npmtrends. 
-*Redux is a predictable state container for JavaScript apps.* The state of our whole application is stored in an object tree within a single store, which your app components depend on. Every component is connected directly to the global store, and the global store life cycle is independent of the components' life cycle.
+*Redux is a predictable state container for JavaScript apps.* The state of our whole application is stored in an object tree within a single store, which your app components depend on.  
+Every component is connected directly to the global store, and the global store life cycle is independent of the components' life cycle.  
 Another solution is Mobx. Both seem to be complex enough to look for alternatives.
 
 ## Are there any other options available?
@@ -35,10 +36,10 @@ After some research, the best libraries for state management in 2020 are by orde
 
 ## Should we use Context API?
 
-The Context API is great. It’s super easy to use compared to Redux and requires a lot less code, so why wouldn’t we use it?
-*The problem with context is simple: Everything that consumes a context re-renders everytime that context’s state changes.*
-That means that if you’re consuming your context all over the place in your app, or worse, using one context for your entire app’s state, you’re causing a ton of re-renders all over the place!
-Using useMemo doesn’t prevent rerenders on all components’ consumers.
+The Context API is great. It’s super easy to use compared to Redux and requires a lot less code, so why wouldn’t we use it?  
+*The problem with context is simple: Everything that consumes a context re-renders everytime that context’s state changes.*  
+That means that if you’re consuming your context all over the place in your app, or worse, using one context for your entire app’s state, you’re causing a ton of re-renders all over the place!  
+Using useMemo doesn’t prevent rerenders on all components’ consumers.  
 It would be needed several context Api providers to avoid rerenders on data mutation across the same context.
 
 
@@ -47,18 +48,18 @@ It would be needed several context Api providers to avoid rerenders on data muta
 
 
 ### Pros of using redux
-* Central store, any component can access any state from the store, there’s no need of passing props back and forth.
-* Another way to look at centralised store, it persists the state of a component even after the component has unmounted.
-* Prevents unnecessary re-renders, as when the state changes it returns new state which uses shallow copy.
-* Testing will be easy as UI and data management are separated.
+* Central store, any component can access any state from the store, there’s no need of passing props back and forth.  
+* Another way to look at centralised store, it persists the state of a component even after the component has unmounted.  
+* Prevents unnecessary re-renders, as when the state changes it returns new state which uses shallow copy.  
+* Testing will be easy as UI and data management are separated.  
 * History of state is maintained which helps in implementing features like undo very easily.
 
 
 ### Cons of using redux:
-* No encapsulation. Any component can access the data which can cause security issues.
-* Boilerplate code. Restricted design.
-* As state is immutable in redux, the reducer updates the state by returning a new state every time which can cause excessive use of memory.
-* Known issues while using redux:
+* No encapsulation. Any component can access the data which can cause security issues.  
+* Boilerplate code. Restricted design.  
+* As state is immutable in redux, the reducer updates the state by returning a new state every time which can cause excessive use of memory.  
+* Known issues while using redux:  
     - Stale Props & Zombie Children(*6): With hooks, there is no way to render a context provider, which means there's also no nested hierarchy of subscriptions. Because of this, the "stale props" and "zombie child" issues may potentially re-occur in an app that relies on using hooks instead of connect().
 
 
@@ -92,10 +93,9 @@ Small, fast and scaleable state-management solution. Has a comfy api based on ho
 
 ### Implementation Test using Zustand & Typescript:
 
-//store.ts
-![Zustand](images/store.png)
-
 #### Creating the store:
+//store.ts  
+![Zustand](images/store.png)
 
 The store is a hook! You can put anything in it: primitives, objects, functions.
 
@@ -108,7 +108,7 @@ The setCountry function takes a string parameter (representing a country name) a
 getAllCountries trigger an async request to the network. After it resolves, it uses the set function to merge the states.
 
 #### Accesing data & event binding
-//app.tsx
+//app.tsx  
 ![Zustand](images/access-binding.png)
 
 We simply use the hook useStore to get the part of the state that we need. In this case we get an array of countries and a method to trigger an async request.
