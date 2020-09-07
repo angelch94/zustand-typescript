@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.countries-container {
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #61dafb;
+  border-style: dashed;
+  list-style-type: none; 
+
+}
+
+.getcountriesbutton {
+  padding: 10px 25px 10px 25px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: #61dafb;
+  border-style: dashed;
+}
+
+.getcountriesbutton:hover {
+  border-style: solid;
+  cursor: pointer;
+}
