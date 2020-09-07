@@ -120,14 +120,14 @@ Instead of pulling a single property of the global state, we can get multiple pr
 
 ## Bibliography
 
-1. *Global State Comparison:* https://github.com/dai-shi/lets-compare-global-state-with-react-hooks
-2. *The problem with Context API:* https://leewarrick.com/blog/the-problem-with-context/
-3. *Zustand Github:* https://github.com/react-spring/zustand
-4. *Manage react state with Zustand:* https://phpnews.io/feeditem/manage-react-state-with-zustand
-5. *Transient updates (for often occuring state-changes):* https://github.com/react-spring/zustand#transient-updates-for-often-occuring-state-changes
-6. *Stale Props &  Zombie Child:* https://react-redux.js.org/api/hooks#stale-props-and-zombie-children
-7. *React Concurrency RFC:* https://github.com/bvaughn/rfcs/blob/useMutableSource/text/0000-use-mutable-source.md
-8. *Context loss in ReactJS:* https://github.com/facebook/react/issues/13332
-9. *Zustand examples:* https://codesandbox.io/examples/package/zustand
-10. *Flux pattern explained by facebook:* https://facebook.github.io/flux/docs/in-depth-overview/#:~:text=Flux%20is%20the%20application%20architecture,a%20lot%20of%20new%20code.
-11. *Why not use Redux:* https://medium.com/@morgler/dont-use-redux-9e23b5381291#:~:text=Redux%20makes%20state%20changes%20explicit,a%20convention%2C%20not%20a%20library.
+1. **Global State Comparison:** https://github.com/dai-shi/lets-compare-global-state-with-react-hooks
+2. **The problem with Context API:** https://leewarrick.com/blog/the-problem-with-context/
+3. **Zustand Github:** https://github.com/react-spring/zustand
+4. **Manage react state with Zustand:** https://phpnews.io/feeditem/manage-react-state-with-zustand
+5. **Transient updates (for often occuring state-changes):** https://github.com/react-spring/zustand#transient-updates-for-often-occuring-state-changes
+6. **Stale Props &  Zombie Child:** https://react-redux.js.org/api/hooks#stale-props-and-zombie-children
+7. **React Concurrency RFC:** https://github.com/bvaughn/rfcs/blob/useMutableSource/text/0000-use-mutable-source.md
+8. **Context loss in ReactJS:** https://github.com/facebook/react/issues/13332
+9. **Zustand examples:** https://codesandbox.io/examples/package/zustand
+10. **Flux pattern explained by facebook:** https://facebook.github.io/flux/docs/in-depth-overview/#:~:text=Flux%20is%20the%20application%20architecture,a%20lot%20of%20new%20code.
+11. **Why not use Redux:** https://medium.com/@morgler/dont-use-redux-9e23b5381291#:~:text=Redux%20makes%20state%20changes%20explicit,a%20convention%2C%20not%20a%20library.
